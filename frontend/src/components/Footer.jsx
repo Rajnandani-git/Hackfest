@@ -21,7 +21,7 @@ export default function Footer({ setActiveTab }) {
             </p>
             <div className="flex items-center gap-2 text-xs font-mono text-cyan-400/90 pt-1">
               <Terminal className="w-3.5 h-3.5" />
-              <span>PARAKRAM HACKATHON 2026 • THEME 2: CYBER SECURITY & SAFETY</span>
+              <span>HACKFEST HACKATHON 2026 • THEME : CYBER SECURITY & SAFETY</span>
             </div>
           </div>
 

@@ -18,7 +18,7 @@ export default function LandingPage({ setActiveTab }) {
           {/* Hackathon Banner */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 text-xs font-mono text-cyan-300 mb-6 cyber-glow-cyan shadow-sm">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            <span>PARAKRAM HACKATHON 2026 • THEME 2: CYBER SECURITY & SAFETY • CS-01</span>
+            <span>HACKFEST HACKATHON 2026 • THEME: CYBER SECURITY & SAFETY</span>
           </div>
 
           {/* Main Title */}
