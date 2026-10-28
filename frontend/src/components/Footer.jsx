@@ -21,7 +21,7 @@ export default function Footer({ setActiveTab }) {
             </p>
             <div className="flex items-center gap-2 text-xs font-mono text-cyan-400/90 pt-1">
               <Terminal className="w-3.5 h-3.5" />
-              <span>HACKFEST HACKATHON 2026 • THEME : CYBER SECURITY & SAFETY</span>
+              <span>HACKFEST HACKATHON 2026 •PRESENTED BY OSEN• POWERED BY CRAFTORA </span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export default function Footer({ setActiveTab }) {
                 <span>Merchant Ledger Verification</span>
               </div>
               <div className="text-[11px] text-slate-500 pt-2">
-                Problem Statement CS-01: Fake Payment Verification
+                Problem Statement: Fake Payment Verification
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Footer({ setActiveTab }) {
           <div className="mt-4 flex items-center justify-center gap-2 text-[11px] text-slate-400">
             <span>PayShield AI • Verify Before You Trust</span>
             <span>•</span>
-            <span>Parakram 2026 Submission</span>
+            <span>Hackfest'26 Submission</span>
           </div>
         </div>
       </div>
