@@ -106,7 +106,7 @@ export default function HistoryPage() {
               <option value="VERIFIED">VERIFIED Only</option>
               <option value="MISMATCH">MISMATCH Only</option>
               <option value="NOT FOUND">NOT FOUND Only</option>
-              <option value="INCONCLUSIVE">INCONCLUSIVE Only</option>
+              {/* <option value="INCONCLUSIVE">INCONCLUSIVE Only</option> */}
             </select>
           </div>
 

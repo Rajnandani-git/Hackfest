@@ -15,11 +15,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UPLOAD_DIR = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-# Instantiate OCR engine once
+# OCR engine is initicated 
 ocr_engine = OCRService()
 
 ALLOWED_MIME_TYPES = ["image/jpeg", "image/png", "image/jpg", "image/webp"]
-MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+MAX_FILE_SIZE = 10 * 1024 * 1024  # the size of max is 10 MB 
 
 
 @router.post("/analyze")
@@ -34,7 +34,7 @@ async def analyze_screenshot(
             detail=f"Unsupported file format: {file.content_type}. Please upload JPG or PNG screenshots."
         )
 
-    # 2. Read file bytes and validate size
+    # 2. Read file written and validate size
     file_bytes = await file.read()
     if len(file_bytes) > MAX_FILE_SIZE:
         raise HTTPException(status_code=400, detail="File size exceeds maximum allowable limit of 10MB.")

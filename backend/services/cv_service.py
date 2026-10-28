@@ -42,7 +42,7 @@ class ComputerVisionService:
                 original.save(buffer, "JPEG", quality=quality)
                 buffer.seek(0)
                 
-                # Reopen and compute difference
+                # Reopen and compute a difference
                 recompressed = Image.open(buffer)
                 diff = ImageChops.difference(original, recompressed)
                 

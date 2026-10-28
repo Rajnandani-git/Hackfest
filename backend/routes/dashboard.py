@@ -25,7 +25,7 @@ def get_dashboard_metrics(db: Session = Depends(get_db)):
     recent_records_raw = db.query(AnalysisRecord).order_by(AnalysisRecord.created_at.desc()).limit(8).all()
     recent_records = [r.to_dict() for r in recent_records_raw]
 
-    # Recharts formatted distributions
+    # Recharts the formatted distributions 
     status_distribution = [
         {"name": "Verified", "value": verified_count, "color": "#10b981"},
         {"name": "Mismatch", "value": mismatch_count, "color": "#ef4444"},

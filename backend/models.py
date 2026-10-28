@@ -57,7 +57,7 @@ class AnalysisRecord(Base):
     cv_metrics_json = Column(Text, default="{}")             # JSON object of CV metrics
     suggested_action = Column(Text, nullable=True)
     
-    # Matching merchant transaction (if found)
+    # Matching merchant transaction (if found the match)
     matched_transaction_id = Column(Integer, nullable=True)
     
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
