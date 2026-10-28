@@ -96,5 +96,6 @@ class AnalysisRecord(Base):
             "cv_metrics": self.cv_metrics,
             "suggested_action": self.suggested_action,
             "matched_transaction_id": self.matched_transaction_id,
-            "created_at": self.created_at.isoformat() if self.created_at else None,
+            # "created_at": self.created_at.isoformat() if self.created_at else None,
+            "created_at": self.extracted_timestamp.isoformat() if self.extracted_timestamp else None,
         }
